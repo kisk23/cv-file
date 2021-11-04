@@ -1,0 +1,64 @@
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 2.6fr 2.3fr 0.1fr 0.6fr;
+    gap: 2px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "name work"
+      "name education"
+      ". ."
+      "conatct conatct";
+  }
+
+
+  .name { grid-area: name; 
+    border: 1px solid #000000; 
+background-image: url("download.jpg") ;
+background-color: floralwhite;
+background-repeat: no-repeat;
+background-size: 100%;
+border-radius: 10px;}
+  
+  .work { grid-area: work;
+    border: 1px solid #000000;
+background-color: lightyellow; 
+border-radius: 10px;}
+  
+  .education { grid-area: education;
+    border: 1px solid #000000; 
+    border-radius: 10px;
+    background-color: floralwhite;
+  }
+  
+  .conatct { grid-area: conatct;
+    background-color:rgb(0,151,136); }
+  ul {
+    font-size: 12px;
+    list-style-image: url('date2.jpg')
+    ;
+  }
+  body{background-color:rgb(224,224,224);}
+  p {
+    white-space: pre;
+    color: black;
+    background: pink;
+    font-size: 10px;
+}
+
+#center{
+  
+    text-align: center;
+  
+
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box img {
+  width: 100px;
+  height: 100px;
+}
